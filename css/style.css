@@ -1,0 +1,51 @@
+/* *********COMMONS********* */
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100%;
+    position: relative;
+}
+.canvas{
+    height: 50vh;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% ,50%);
+    display: flex;
+}
+.photo{
+    height: 100%;
+    width: 75%;
+    
+
+}
+.minies {
+    height: 100%;
+    width: 25%;
+}
+
+
+
+
+
+
+
+/* *********DEBUG********* */
+
+.debug .canvas{
+    background-color: aqua;
+}
+
+.debug .photo {
+    background-color: blue;
+}
+
+.debug .minies{
+    background-color: lawngreen;
+}
