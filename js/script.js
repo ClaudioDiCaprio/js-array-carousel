@@ -35,9 +35,11 @@ const sx = document.querySelector('.sx');
 sx.innerHTML = items;
 
 const anfitrione = document.getElementsByClassName('anfitrione');
+const object = document.getElementsByClassName('object');
 console.log(anfitrione[0]);
 let deanfrit = 0 ;
 anfitrione[deanfrit].classList.add('deact');
+object[deanfrit].classList.add('active-object');
 
 // image goes
 
@@ -51,12 +53,13 @@ if(deanfrit < imagesArray.length - 1){
     
     // let\'s remove the class wich gaves visibility
     anfitrione[deanfrit].classList.remove('deact');
-
+    object[deanfrit].classList.remove('active-object');
     // in order to first change the photo first and then add to the new hptoto the class, let's increment our declared variable wich is acting as a deact class's counter
 
     deanfrit++;
     //add deact to next element
     anfitrione[deanfrit].classList.add('deact');
+    object[deanfrit].classList.add('active-object');
 
     console.log(deanfrit)
 }
@@ -65,10 +68,12 @@ if(deanfrit < imagesArray.length - 1){
 up.addEventListener("click" , function(){
     if(deanfrit > 0){
         anfitrione[deanfrit].classList.remove('deact');
+        object[deanfrit].classList.remove('active-object');
 
         deanfrit--;
     
         anfitrione[deanfrit].classList.add('deact');
+        object[deanfrit].classList.add('active-object');
     }
     
 })
