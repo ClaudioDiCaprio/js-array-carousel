@@ -29,12 +29,6 @@
     height: 100%;
 }
 
-
-
-.actigrip {
-    display: block;
-}
-
 #slider .dx{
     width: 200px;
     background-color: black;
@@ -97,6 +91,7 @@ transform: translateX(-50%);
     width: 40%;
 }
 .text span{
+    /* display: none; */
     opacity: 0.7;
 }
 
