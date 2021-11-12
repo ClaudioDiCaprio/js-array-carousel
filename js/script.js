@@ -45,7 +45,7 @@ const up = document.querySelector('.up');
 const down = document.querySelector('.down');
 
 // let's create an event , when it happens we'll make a change
-up.addEventListener("click", function(){
+down.addEventListener("click", function(){
 
 if(deanfrit < imagesArray.length - 1){
     
@@ -57,8 +57,21 @@ if(deanfrit < imagesArray.length - 1){
     deanfrit++;
     //add deact to next element
     anfitrione[deanfrit].classList.add('deact');
+
+    console.log(deanfrit)
 }
 });
+
+up.addEventListener("click" , function(){
+    if(deanfrit > 0){
+        anfitrione[deanfrit].classList.remove('deact');
+
+        deanfrit--;
+    
+        anfitrione[deanfrit].classList.add('deact');
+    }
+    
+})
 
 
 
