@@ -13,8 +13,8 @@ let items ='';
 
 for (let i = 0; i < imagesArray.length; i++){
     items += `
-    <div class="col-sx">          
-            <img src="${imagesArray[i]}" alt="">
+    <div class="anfitrione">
+           <img src="${imagesArray[i]}" alt="">
     </div>
     `;
 }
@@ -23,13 +23,11 @@ console.log(items);
 
 // let's put this elements inside the html
 
-const Qui = document.querySelector('.Qui');
-Qui.innerHtml = items;
+const sx = document.querySelector('.sx');
+sx.innerHTML = items;
 
-// let's select all the itmes and add the display block
-
-
-
+const anfitrione = document.getElementsByClassName('anfitrione');
+console.log(anfitrione);
 
 
 

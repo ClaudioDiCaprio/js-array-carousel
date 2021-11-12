@@ -24,28 +24,23 @@
     display: flex;
 }
 
-#slider .col-sx,
-#slider .col-dx{
+
+#slider .dx{
     height: 100%;
 }
 
-.col-sx{
-    width: 100%;
-    background-color: coral;
-    display: block;
-}
 
 
 .actigrip {
     display: block;
 }
 
-#slider .col-dx{
+#slider .dx{
     width: 200px;
     background-color: black;
 }
 
-.col-dx .object{
+.dx .object{
     width: 100%;
     height: calc( 100% / 5);
     border: 1px solid black;
@@ -106,9 +101,19 @@ transform: translateX(-50%);
 }
 
 
-#slider .Qui {
-    /* background-color: blue; */
-    height: 100%;
+
+.sx {
+    background-color: rgb(51, 255, 0);
     width: 100%;
+    height: 100%;
 }
 
+.anfitrione{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.deact{
+    display: block;
+}
