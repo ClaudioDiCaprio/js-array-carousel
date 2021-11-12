@@ -28,10 +28,18 @@
 #slider .col-dx{
     height: 100%;
 }
-#slider .col-sx{
+
+.col-sx{
     width: 100%;
     background-color: coral;
+    display: block;
 }
+
+
+.actigrip {
+    display: block;
+}
+
 #slider .col-dx{
     width: 200px;
     background-color: black;
@@ -98,6 +106,9 @@ transform: translateX(-50%);
 }
 
 
-
-
+#slider .Qui {
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+}
 
