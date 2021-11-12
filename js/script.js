@@ -27,8 +27,9 @@ const sx = document.querySelector('.sx');
 sx.innerHTML = items;
 
 const anfitrione = document.getElementsByClassName('anfitrione');
-console.log(anfitrione);
-
+console.log(anfitrione[0]);
+let deanfrit = 0 ;
+anfitrione[deanfrit].classList.add('deact');
 
 
 // const title = [
