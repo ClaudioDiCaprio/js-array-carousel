@@ -109,11 +109,15 @@ transform: translateX(-50%);
     display: none;
 }
 
-.deact{
-    display: block;
-}
-
 .active-object{
     opacity: 1;
     border: 1px solid white;
+}
+
+.inner{
+    display: none;
+}
+
+.deact{
+    display: block;
 }
